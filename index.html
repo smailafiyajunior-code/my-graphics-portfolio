@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smailafiya Junior Graphics — Designs That Speak</title>
+  
+  <!-- ICON LIBRARY -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- YOUR CSS FILE (Make sure this is exactly style.css) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <p class="brand">@Smailafiyajunior</p>
+    <h1>Smailafiya Junior Graphics</h1>
+    <p class="tagline">Designs That Speak</p>
+    <p class="sub">Graphic Design & Visual Branding</p>
+    <div class="hero-buttons">
+      <a href="https://wa.me/2349134032386" target="_blank" class="btn">Hire Me on WhatsApp</a>
+      <a href="#services" class="btn btn-outline">View Services</a>
+    </div>
+  </header>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services">
+    <h2>What I Do</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Brand Identity</h3>
+        <p>Logos, letterheads, and complete visual branding that makes your business memorable.</p>
+      </div>
+      <div class="service-card">
+        <h3>Marketing Design</h3>
+        <p>Flyers, posters, banners, and social media graphics that grab attention and drive sales.</p>
+      </div>
+      <div class="service-card">
+        <h3>Print & Digital</h3>
+        <p>Certificates, invitation cards, and digital assets designed with precision and style.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <section id="work" class="work">
+    <h2>My Recent Work</h2>
+    <p class="work-sub">Some of my latest graphic design projects.</p>
+    
+    <div class="work-grid">
+        
+      <div class="work-box">
+          <img src="images/logo.jpg" alt="Logo Design" onclick="openLightbox(this.src)"> 
+          <h3>Logo Design</h3>
+      </div>
+      
+      <div class="work-box">
+          <img src="images/flyer.jpg" alt="Flyer Design" onclick="openLightbox(this.src)">
+          <h3>Event Flyer Design</h3>
+      </div>
+      
+      <div class="work-box">
+          <img src="images/poster.jpg" alt="Poster Design" onclick="openLightbox(this.src)">
+          <h3>Campaign Poster & Calendar Design</h3>
+      </div>
+      
+      <div class="work-box">
+          <img src="images/brand.jpg" alt="Brand Design" onclick="openLightbox(this.src)">
+          <h3>Branding & Social Media Design</h3> 
+      </div>
+      
+      <div class="work-box">
+          <img src="images/banner.jpg" alt="Banner Design" onclick="openLightbox(this.src)">
+          <h3>Event/Birthday Banner Design</h3> 
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <h2>Let's Build Your Brand</h2>
+    <p>Ready to turn your ideas into creative designs? Let's talk.</p>
+    <div class="contact-links">
+      
+      <!-- WhatsApp Button with Icon -->
+      <a href="https://wa.me/2349134032386" target="_blank" class="btn">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Me
+      </a>
+      
+      <!-- Email Button with Icon -->
+      <a href="mailto:smailafiyajunior@gmail.com" class="btn btn-outline">
+        <i class="fa-solid fa-envelope"></i> Email Me
+      </a>
+      
+      <!-- Facebook Button with Icon (REPLACE THE LINK BELOW) -->
+      <a href="https://facebook.com/YOUR-FACEBOOK-LINK-HERE" target="_blank" class="btn">
+        <i class="fa-brands fa-facebook"></i> Facebook
+      </a>
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mailafiya Soja Junior · @Smailafiyajunior</p>
+  </footer>
+
+  <!-- THE POP-UP BOX (LIGHTBOX) -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Full Image">
+  </div>
+
+  <!-- THE MAGIC SWITCH (SCRIPT FOR LIGHTBOX) -->
+  <script>
+    function openLightbox(imageSrc) {
+      document.getElementById('lightbox').style.display = 'flex';
+      document.getElementById('lightbox-img').src = imageSrc;
+    }
+    
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
